@@ -1,0 +1,1 @@
+// Handles automated sending of emails, communicating with Gmail/Outlook, or your own backend.

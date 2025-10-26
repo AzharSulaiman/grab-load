@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import EmailTemplateManager from './components/emailTemplateManager';
+import MapView from './components/mapView';
+import LoadBoardAnalyzer from './components/loadBoardAnalyzer';
+import FactoringCheck from './components/factoringCheck';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="popup-app">
+      <h1 style={{fontWeight:600, color:'#49499a', fontSize:'1.25rem'}}>Grab Load</h1>
+      <EmailTemplateManager />
+      <MapView />
+      <LoadBoardAnalyzer />
+      <FactoringCheck />
     </div>
   );
 }

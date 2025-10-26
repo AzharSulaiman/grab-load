@@ -1,0 +1,1 @@
+// Service worker/background script—runs in the background and handles extension-wide logic (e.g., message passing, persistent features, alarms).

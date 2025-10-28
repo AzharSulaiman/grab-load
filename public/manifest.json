@@ -10,11 +10,13 @@
     "action": {
         "default_popup": "index.html"
     },
-    "host_permissions": ["*://*.loadboard.com/*", "*://*.fmcsadatabase.com/*"],
+    "host_permissions": ["*:https://loadconnect.io/*", "*://*.fmcsadatabase.com/*"],
 
     "content_scripts": [{
         "matches": [
-            "https://*.loadboard.com/*"
+            "https://loadconnect.io/*",
+            "http://loadconnect.io/*",
+            "*://*.loadconnect.io/*"
         ],
         "js": ["src/contentScripts/loadboardScraper.js"],
         "run_at": "document_idle"

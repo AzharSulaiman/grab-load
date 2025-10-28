@@ -11,6 +11,7 @@ const extractLoadData = () => {
     const rate = row.querySelector('.rate')?.innerText || '';
     const broker = row.querySelector('.broker')?.innerText || '';
     loads.push({ origin, destination, rate, broker });
+    console.log("Extension content script running!");
   });
   chrome.storage.local.set({ loads });
 };
